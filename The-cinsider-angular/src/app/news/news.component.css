@@ -1,0 +1,78 @@
+body{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: monospace;
+    background-color: rgb(235,235,235);
+    height: auto;
+}
+.card{
+    /* margin: 150px; */
+    size: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    flex-shrink: 4;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: row; */
+}
+.item{
+    background: white;
+    border: 0.5px solid gray;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px 1px #cccccc;
+    width: 250px;
+    height: 250px;
+    /* width: 20%;
+    height: 60%; */
+    /* float: left; */
+    /* flex-grow: 4; */
+    /* flex-shrink: 1; */
+    /* align-content: center; */
+    margin: 25px 25px 25px 35px;
+    /* flex-grow: 4; */
+    /* flex-shrink: 1; */
+    /* flex-grow: 1; */
+}
+/* .top{
+    margin: auto;
+} */
+/* img{
+    width:250px;
+    height: 150px;
+    margin-top: 50px;
+} */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a :hover{
+    text-decoration: underline;
+}
+.newsComponent{
+    width: 50vw;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 25vh;
+    background-color: white;
+    text-align: left;
+    padding: 8px;
+    justify-content: space-around;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+h3{
+    color: darkblue;
+}
+.time{
+    color: #01200F;
+}

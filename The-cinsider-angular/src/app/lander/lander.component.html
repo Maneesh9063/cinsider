@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <body>
+        <div class="lander">
+            <div class="headText">
+                <h2 class="top">Your future vision</h2>
+                <hr>
+                <h2 class="bottom">Our unknown expeditions</h2>
+            </div>
+        </div>
+        <!-- <app-news></app-news> -->
+        <!-- <app-company></app-company> -->
+        <!-- <app-news></app-news> -->
+        <div class="container">
+            <div *ngFor="let company of companyArray" class="card" >
+                <!-- <a href="http://localhost:3000/productBased/{{product._id}}"><img src="{{product.imageLink}}" alt="{{product.name}}"></a> -->
+                <a [(ngModel)]="company._id" routerLink="company/{{company.name}}" (click)="onSelectedCompany(company._id)"><img src="{{company.imageLink}}" alt="{{company.name}}" ></a>
+            </div>
+        </div>
+    </body>
+</html>

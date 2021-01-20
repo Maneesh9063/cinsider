@@ -1,0 +1,124 @@
+/* body{ */
+    /* background-color: tomato; */
+    /* background: linear-gradient(135deg, #5B5941, black); */
+    /* background: linear-gradient(135deg, tomato, black); */
+    /* background: linear-gradient(135deg, #FFD54F, black); */
+    /* background: linear-gradient(135deg,#998650, black); */
+    /* background: linear-gradient(135deg,#FFEAA7, black); */
+    /* background: linear-gradient(135deg, #E29911, black);
+    height: 100vh;
+} */
+body{
+    margin: 0;
+    height: 90vh;
+  }
+  
+  .bg-opacity{
+      position: relative;
+      background-color: #000;
+  }
+  
+  .bg-opacity::before{
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 90vh;
+      z-index: 0;
+      opacity: 0.2;
+      animation-name: bimage;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      background:  url("../../assets/sb.jpg") no-repeat center center;
+      background-size: cover;
+  }
+@keyframes bimage{
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 0.4;
+    }
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+  }
+.wrapper{
+    width: 90%;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-around;
+    overflow: visible;
+}
+.sort{
+    display: flex;
+    justify-content: space-between;
+    overflow: visible;
+}
+.tag{
+    color:white;
+    margin: auto 0px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+    min-width: 160px;
+    z-index: 15;
+}
+.dropbtn{
+    min-width: 100px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropdown-content a{
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+.dropdown-content a:hover{
+    cursor: pointer;
+    color: tomato;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    background-color: white;
+}
+hr{
+    color: white;
+    width: 90%;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 15px 15px;
+    opacity: 0.5;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid white; */
+    /* border-radius: 250px; */
+    border-radius: 200px;
+    background-color: white;
+    margin: 10px 15px;
+}
+img{
+    width: 200px;
+    height: 180px;
+    margin: auto;
+    /* border-radius: 25px; */
+}

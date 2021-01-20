@@ -1,0 +1,47 @@
+/* .container{
+    width: 100%;
+}
+.news-content{
+    float: left;
+    width: 40%;
+} */
+/* .company-info{
+    width: 60%;
+    float: left;
+} */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    margin: 0px auto;
+    letter-spacing: 1px;
+    font-weight: 500;
+    /* width: 60%; */
+    /* background: linear-gradient(90deg, red, black); */
+    /* color: whitesmoke; */
+}
+.company-info{
+    border: 1px solid white;
+    padding: 15px 35vh;
+}
+h2{
+    color: blueviolet;
+    /* color: #FF7700; */
+}
+.description{
+    text-indent: 25px;
+}
+div{
+    margin: 25px 0px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    margin: 10px 0px;
+    line-height: 20px;
+}
+p{
+    line-height: 25px;
+}

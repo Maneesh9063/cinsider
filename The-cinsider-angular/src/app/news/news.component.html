@@ -1,0 +1,41 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <!-- <div class="card">
+            <div class="item">
+                <img src="../../assets/virtusa.png" alt="virtusa">
+            </div>
+            <div class="item">\
+                <img src="../../assets/amazon.png" alt="virtusa">
+            </div>
+            <div class="item">
+                <h1>My own card</h1>
+                <hr>
+                <p>Hello doctor!</p>
+            </div>
+            <div class="item">
+                <h1>My own card</h1>
+                <hr>
+                <p>Hello doctor!</p>
+            </div>
+            <div class="item">
+                <h1>My own card</h1>
+                <hr>
+                <p>Hello doctor!</p>
+            </div>
+        </div>  -->
+        <div class="newsComponent">
+            <div *ngFor="let news of newsArray" class="container">
+                <a href="{{news.link}}" target="_blank">
+                    <h3>{{news.title}}</h3>
+                </a>
+                    <br>
+                    <p class="time">{{news.time}}</p>
+                    <!-- <br> -->
+                    <!-- <p>{{news.description}}<p> -->
+            </div>
+        </div>
+    </body>
+</html>
+
